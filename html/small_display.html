@@ -1,0 +1,77 @@
+<div class="div">
+    <a class="menu-link_s" href="#">
+        <span></span>
+    </a>
+
+    <div class="menu_sl_s">
+        <ul>
+            <li>
+                <div class="f_close_s">
+
+                </div>
+            </li>
+            <li>
+                <button type="button" class="btn btn-md">ABOUT</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+
+                <div class="dropdown-menu dropdown-menu-right">
+
+                    <a class="btn-md sl dropdown-item" href="#">HISTORY</a>
+                    <a class="btn-md sl dropdown-item" href="#">COMMAND</a>
+                    <a class="btn-md sl dropdown-item" href="#">DREAMS</a>
+
+                </div>
+            </li>
+            <li>
+                <button type="button" class="btn-md btn ">PORTFOLIO</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+
+                <div class="dropdown-menu dropdown-menu-right">
+
+                    <a class="btn-md sl dropdown-item" href="#">SITES</a>
+                    <a class="btn-md sl dropdown-item" href="#">MOBILE APPS</a>
+
+                </div>
+            </li>
+            <li>
+                <button type="button" class="btn-md butn btn " href="#">SIRVICIES</button>
+            </li>
+            <li>
+                <button type="button" class="btn-md butn btn " href="#">CONTACTS</button>
+            </li>
+        </ul>
+    </div>
+
+    <img class="img_logo" src="images/logo_m.jpg">
+    <button type="button" class="btn-sm cbck btn " href="#"> Callback </button>
+</div>
+
+    <div class="name">Our cards</div>
+
+<div class="card">
+    <ul class="card_ul">
+        <li class="card_li"></li>
+        <li class="card_li"></li>
+        <li class="card_li"></li>
+        <li class="card_li"></li>
+        <li class="card_li"></li>
+        <li class="card_li"></li>
+    </ul>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var link_s = $('.menu-link_s');
+        var link_active_s = $('.menu-link_active_s');
+
+        var menu_s = $('.menu_sl_s');
+
+        link_s.click(function () {
+            link_s.toggleClass('menu-link_active_s');
+            menu_s.toggleClass('menu_sl_active_s')
+        });
+        link_s.click(function () {
+            link_active_s.removeClass('menu-link_active_s');
+        });
+    });
+</script>
